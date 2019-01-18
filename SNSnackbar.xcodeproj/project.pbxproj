@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		1C62646021F1ACF80020994E /* SNSnackbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C62645E21F1ACF80020994E /* SNSnackbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C62646721F1AD360020994E /* SNSnackbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C62646621F1AD360020994E /* SNSnackbar.swift */; };
+		1C62646921F1AD450020994E /* SNSnackbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C62646821F1AD450020994E /* SNSnackbar.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1C62645B21F1ACF80020994E /* SNSnackbar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SNSnackbar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C62645E21F1ACF80020994E /* SNSnackbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNSnackbar.h; sourceTree = "<group>"; };
 		1C62645F21F1ACF80020994E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C62646621F1AD360020994E /* SNSnackbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNSnackbar.swift; sourceTree = "<group>"; };
+		1C62646821F1AD450020994E /* SNSnackbar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SNSnackbar.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +52,8 @@
 			children = (
 				1C62645E21F1ACF80020994E /* SNSnackbar.h */,
 				1C62645F21F1ACF80020994E /* Info.plist */,
+				1C62646621F1AD360020994E /* SNSnackbar.swift */,
+				1C62646821F1AD450020994E /* SNSnackbar.xib */,
 			);
 			path = SNSnackbar;
 			sourceTree = "<group>";
@@ -95,6 +101,7 @@
 				TargetAttributes = {
 					1C62645A21F1ACF80020994E = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -120,6 +127,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C62646921F1AD450020994E /* SNSnackbar.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C62646721F1AD360020994E /* SNSnackbar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +270,7 @@
 		1C62646421F1ACF80020994E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -270,6 +280,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SNSnackbar/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -278,6 +289,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = sagar.nikam.SNSnackbar;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +298,7 @@
 		1C62646521F1ACF80020994E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -295,6 +308,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SNSnackbar/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

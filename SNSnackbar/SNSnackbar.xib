@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SNSnackbar" customModule="SNSnackbar" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="JAG-Lo-wZr" id="6Yh-w8-8il"/>
+                <outlet property="headingTextLabel" destination="wDk-eW-3qh" id="pbf-oa-VZE"/>
+                <outlet property="subTitleTextLabel" destination="IP8-uc-ODG" id="oKf-bY-WJn"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <visualEffectView opaque="NO" contentMode="scaleToFill" id="7eS-YP-Usw">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="74"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="0tI-9o-V1K">
+                <rect key="frame" x="0.0" y="0.0" width="350" height="74"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JAG-Lo-wZr">
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="74"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wDk-eW-3qh">
+                                <rect key="frame" x="8" y="8" width="334" height="30.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IP8-uc-ODG">
+                                <rect key="frame" x="8" y="46.5" width="334" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="wDk-eW-3qh" firstAttribute="top" secondItem="JAG-Lo-wZr" secondAttribute="top" constant="8" id="UvD-Bs-1bT"/>
+                            <constraint firstItem="wDk-eW-3qh" firstAttribute="leading" secondItem="JAG-Lo-wZr" secondAttribute="leading" constant="8" id="Wft-XH-fxT"/>
+                            <constraint firstAttribute="trailing" secondItem="wDk-eW-3qh" secondAttribute="trailing" constant="8" id="X1j-dC-30V"/>
+                            <constraint firstItem="IP8-uc-ODG" firstAttribute="top" secondItem="wDk-eW-3qh" secondAttribute="bottom" constant="8" id="XnB-2T-2C8"/>
+                            <constraint firstItem="IP8-uc-ODG" firstAttribute="leading" secondItem="JAG-Lo-wZr" secondAttribute="leading" constant="8" id="bbT-dq-V9A"/>
+                            <constraint firstAttribute="trailing" secondItem="IP8-uc-ODG" secondAttribute="trailing" constant="8" id="sA2-mP-Q2D"/>
+                            <constraint firstAttribute="bottom" secondItem="IP8-uc-ODG" secondAttribute="bottom" constant="8" id="xxO-5a-Ahs"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="JAG-Lo-wZr" secondAttribute="trailing" id="EzY-2Z-IMM"/>
+                    <constraint firstItem="JAG-Lo-wZr" firstAttribute="leading" secondItem="0tI-9o-V1K" secondAttribute="leading" id="KQe-Nd-NqP"/>
+                    <constraint firstAttribute="bottom" secondItem="JAG-Lo-wZr" secondAttribute="bottom" id="U04-zW-bzD"/>
+                    <constraint firstItem="JAG-Lo-wZr" firstAttribute="top" secondItem="0tI-9o-V1K" secondAttribute="top" id="yvN-Gm-96B"/>
+                </constraints>
+            </view>
+            <blurEffect style="light"/>
+            <point key="canvasLocation" x="-153.59999999999999" y="-60.26986506746627"/>
+        </visualEffectView>
+    </objects>
+</document>
